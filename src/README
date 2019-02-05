@@ -1,0 +1,5 @@
+In this APP our purpose is to do async search and show list of search item from youtube API
+GO to console.developers.google.com create a project once created searc for Youtube data api get credentials updtae in your API file as KEY 
+GO to https://developers.google.com/youtube/v3/docs/search/list to check how we can make request to get data from youtube API
+FOR CSS we have used semantic ui.. just update link in public folder -index file 
+REDUX NOT USED
