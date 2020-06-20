@@ -14,11 +14,17 @@ class App extends Component{
   }
 
   onTermSubmit = async (term) => {
+    const KEY = 'AIzaSyBc7mC2nWDwrVf93zb6iVgrsTE5xSofTvs';
     const response = await youtube.get('/search' , {
       params:{
-        q: term,   // q is the query parameter refer youtube search api onn google it rquires q for search term
-      }
+        q: term, // q is the query parameter refer youtube search api onn google it rquires q for search term
+        part:'snippet',
+        maxResults: 5,
+        type: 'video',
+        key:KEY
+    }
     });
+    console.log(response)
       this.setState({
         videos:response.data.items,
         selectedVideo:response.data.items[0]

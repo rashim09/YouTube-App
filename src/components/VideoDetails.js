@@ -1,6 +1,6 @@
 import React from 'react';
 
-// here i ahve used destructuring
+// here i have used destructuring
 const VideoDetail = ({ video }) =>{
     if(!video){
         return <div> Loading.. </div>
